@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    background: grey;
+    top: 0;
+}
+
+.url-container {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-self: center;
+}
+
+.url-container input {
+    border-radius: 4px;
+    padding: 4px 16px;
+    min-width: 200px;
+}
+
+.url-container input, span {
+    margin-right: 16px;
+}
+
+.url-container span {
+    display: flex;
+    align-self: center;
+    color: blue;
+    font-weight: bold;
+}
