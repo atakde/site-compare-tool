@@ -1,5 +1,12 @@
 import { useRef } from "react";
 import "./Header.css";
+import { BsPhone } from "react-icons/bs";
+import {
+  MdDesktopMac,
+  MdSend,
+  MdOutlineCompareArrows,
+  MdTabletMac,
+} from "react-icons/md";
 
 const Header = (props) => {
   const firstUrlInput = useRef();
@@ -12,17 +19,30 @@ const Header = (props) => {
           ref={firstUrlInput}
           placeholder="Please enter first url"
         />
-        <span>vs</span>
+        <MdOutlineCompareArrows className="icons" />
         <input
           type="text"
           ref={secondUrlInput}
           placeholder="Please enter second url"
         />
-        <button
+        <MdSend
+          className="icons buttons"
           onClick={() => props.handleButtonClick(firstUrlInput, secondUrlInput)}
-        >
-          GO
-        </button>
+        />
+        <p className="resize-container">
+          <BsPhone
+            className="icons buttons"
+            onClick={() => props.handleViewMode("mobile")}
+          />
+          <MdTabletMac
+            className="icons buttons"
+            onClick={() => props.handleViewMode("tablet")}
+          />
+          <MdDesktopMac
+            className="icons buttons"
+            onClick={() => props.handleViewMode("desktop")}
+          />
+        </p>
       </div>
     </div>
   );

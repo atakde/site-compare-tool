@@ -2,7 +2,7 @@ html {
   overflow: auto;
 }
 
-html, body, div, iframe {
+html, body, div {
   margin: 0px;
   padding: 0px;
   height: 100%;

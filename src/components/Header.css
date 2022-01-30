@@ -23,9 +23,23 @@
     margin-right: 16px;
 }
 
-.url-container span {
+.url-container > svg {
     display: flex;
     align-self: center;
-    color: blue;
+    color: black;
     font-weight: bold;
+    margin-right: 16px;
+}
+
+.icons {
+    font-size: 40px;
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.resize-container {
+    margin: 0 16px;
+    padding: 0;
 }
