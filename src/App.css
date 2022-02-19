@@ -2,10 +2,13 @@ html {
   overflow: auto;
 }
 
+.App {
+  height: calc(100vh - 80px);
+}
+
 html, body, div, iframe {
   margin: 0px;
   padding: 0px;
-  height: 100%;
   width: 100%;
   border: none;
 }

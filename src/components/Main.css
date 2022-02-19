@@ -1,6 +1,7 @@
 .iframe-container {
     display: flex;
     margin: 80px 0;
+    height: 100%;
 }
 
 .iframe-view {
