@@ -2,7 +2,7 @@
     display: flex;
     position: fixed;
     height: 80px;
-    background: grey;
+    background: #ddd;
     top: 0;
 }
 
